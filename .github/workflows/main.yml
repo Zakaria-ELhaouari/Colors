@@ -17,6 +17,6 @@ jobs:
         APP_NAME: ${{ 'color-api-ci' }}
       run: |
         cd ./ASPNetCoreLabs/HerokuContainer
-        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+        docker login --username=zakaria.elhaouarii99@gmail.com --password=$HEROKU_API_KEY registry.heroku.com
         heroku container:push web -a $APP_NAME
         heroku container:release web -a $APP_NAME
